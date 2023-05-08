@@ -1,0 +1,12 @@
+{% extends 'layouts/header.twig' %}
+
+{% block app %}
+    <div class="h-screen overflow-x-hidden flex flex-col">
+		<div class="h-screen">
+			{% block content %}
+				{# Body block #}
+			{% endblock %}
+		</div>
+        {% include "partials/footer.twig" %}
+    </div>
+{% endblock %}

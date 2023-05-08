@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+body {
+    font-family: Inter;
+    color: #212121;
+}
+
+::selection {
+    background-color: #1f5ee6aa;
+}
+
+a:hover {
+    color: #2075dd;
+}
+
+a:active {
+    color: #166ad1;
+    text-decoration: underline;
+}

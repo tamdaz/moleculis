@@ -1,0 +1,12 @@
+{% extends "layouts/base.twig" %}
+
+{% set title = "Accueil" %}
+
+{% block head %}
+	<script src="/js/index.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}
+
+{% block body %}
+    {{ markdown("# Hello world") }}
+{% endblock %}

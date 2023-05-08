@@ -1,0 +1,29 @@
+{% extends "layouts/base.twig" %}
+
+{% set title = "Accueil" %}
+
+{% block head %}
+	<script src="/js/index.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}
+
+{% block content %}
+	<div class="grid grid-cols-4 grid-cols-4 gap-4 w-screen h-screen p-8">
+		<div class="overflow-hidden border rounded-md p-4 col-span-3 row-span-2 relative">
+			<span class="text-3xl font-bold">Représentation graphique</span>
+			<canvas id="chart"></canvas>
+		</div>
+		<div class="overflow-hidden border rounded-md p-4">
+			<span class="text-3xl font-bold">En direct (en PMS)</span>
+			<div class="w-full h-full flex justify-center items-center font-bold text-5xl">
+				<span id="concentration_live">---</span>
+			</div>
+		</div>
+		<div class="overflow-hidden border rounded-md p-4">
+			<span class="text-3xl font-bold">Moyenne (en PMS)</span>
+			<div class="w-full h-full flex justify-center items-center font-bold text-5xl">
+				<span id="average_text">---</span>
+			</div>
+		</div>
+	</div>
+{% endblock %}

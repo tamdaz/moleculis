@@ -1,0 +1,29 @@
+{
+    "name": "tamdaz/moleculis",
+    "autoload": {
+        "psr-4": {
+            "App\\Http\\": "app/",
+            "App\\Config\\" : "config/",
+            "App\\Source\\" : "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "tamdaz",
+            "email": "tamda.z@teslaeduc.onmicrosoft.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.6",
+        "nyholm/psr7": "^1.5",
+        "nyholm/psr7-server": "^1.0",
+        "guzzlehttp/psr7": "^2",
+        "laminas/laminas-diactoros": "^2.24",
+        "slim/twig-view": "^3.3",
+        "php-di/slim-bridge": "^3.3",
+        "symfony/dotenv": "^6.2",
+        "twig/markdown-extra": "^3.5",
+        "erusev/parsedown": "^1.7"
+    }
+}
